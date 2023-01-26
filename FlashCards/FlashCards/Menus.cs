@@ -1,12 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace FlashCards
+﻿namespace FlashCards;
+public class Menus
 {
-    internal class Class1
+    public static void Begin()
     {
+        Console.WriteLine("Welcome to Flash Cards Application");
+        Console.WriteLine($"Database location:{Configurator.connectionString}");
+        Console.WriteLine("---------------------------------------------\n");
+        Main();
+    }
+
+    public static void Main()
+    {
+        Console.WriteLine();
     }
 }
